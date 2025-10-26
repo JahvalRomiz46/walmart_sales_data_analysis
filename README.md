@@ -15,7 +15,7 @@ Dataset yang digunakan merupakan data penjualan cabang Walmart dalam 3 bulan ter
 - Nilai rating pelanggan  
 
 **Kolom-kolom:**
-`invoice_id`, `branch`, `city`, `customer_type`, `gender`, `product_line`, `unit_price`, `quantity`, `tax_pct`, `total`, `date`, `time`, `payment`, `cogs`, `gross_margin_pct`, `gross_income`, `rating`, `time_of_day`, `day_name`, dan `month_name`
+`invoice_id`, `branch`, `city`, `customer_type`, `gender`, `product_line`, `unit_price`, `quantity`, `tax_pct`, `total`, `date`, `time`, `payment`, `cogs`, `gross_margin_pct`, `gross_income`, `rating`, `time_of_day`, `day_name`, & `month_name`
 
 ---
 
@@ -66,3 +66,17 @@ Analisis ini bertujuan untuk menjawab berbagai pertanyaan bisnis terkait perform
 4. Rata-rata **rating pelanggan tertinggi** diberikan pada **hari Jumat di cabang A**, **hari Senin di cabang B**, dan **hari Sabtu di cabang C**, yang mungkin dipengaruhi berbagai faktor di masing-masing cabang.
 5. Pola penjualan menunjukkan **puncak transaksi terjadi di malam pada awal minggu (Senin–Kamis)**, serta **siang  pada pertengahan hingga akhir minggu (Rabu & Jumat)**. Pola ini dapat dimanfaatkan untuk penjadwalan promosi atau penambahan staf.
 7. Tipe pelanggan **Member lebih mendominasi** dalam jumlah transaksi, kuantitas produk, dan total pengeluaran **dibanding Non-member/Normal**, menandakan program loyalitas berjalan efektif dan berkontribusi besar terhadap pendapatan perusahaan.
+
+---
+
+## Conclusion
+Melalui proyek ini, saya belajar bagaimana melakukan proses analisis data bisnis hanya dengan menggunakan SQL sebagai alat utama.  
+Proyek ini tidak berfokus pada pipeline end-to-end, melainkan menekankan pada pemahaman logika query, transformasi data, dan penerjemahan hasil analisis menjadi insight bisnis yang bermakna.
+
+Dari pengalaman ini, saya mempelajari bagaimana:
+- Mengubah data mentah menjadi informasi yang siap dianalisis dengan feature engineering sederhana seperti penambahan kolom waktu dan tanggal.  
+- Menggunakan query kompleks (CTE, CASE WHEN, dan Window Functions) untuk menjawab pertanyaan bisnis.  
+- Melatih kemampuan berpikir kritis dalam membaca pola penjualan, perilaku pelanggan, dan performa cabang.  
+- Menyusun hasil analisis menjadi insight yang relevan bagi pengambilan keputusan bisnis.  
+
+Proyek ini membantu saya memahami kemampuan SQL bukan sekadar menulis query, tetapi juga bagaimana menggunakannya untuk menjawab permasalahan nyata dalam bisnis secara logis dan terstruktur.
