@@ -1,6 +1,6 @@
 # 🏪 Analisis Data Penjualan Walmart (Simulation Project)
 
-## 📖 Deskripsi Proyek
+## Deskripsi Proyek
 Proyek ini merupakan simulasi analisis data bisnis menggunakan SQL yang bertujuan untuk menampilkan kemampuan dalam melakukan eksplorasi dan analisis data penjualan tanpa ETL dan visualisasi data.
 Fokus proyek ini adalah mensimulasikan situasi nyata di dunia kerja, di mana seorang Data Analyst diminta untuk menjawab berbagai pertanyaan bisnis yang membutuhkan *advanced SQL query* — seperti *CTE (Common Table Expressions)*, *CASE WHEN*, dan *window functions*.
 
