@@ -1,4 +1,4 @@
-# 🏪 Analisis Data Penjualan Walmart (Simulation Project)
+🏪 Analisis Data Penjualan Walmart (Simulation Project)
 
 ## Deskripsi Proyek
 Proyek ini merupakan simulasi analisis data bisnis menggunakan SQL yang bertujuan untuk menampilkan kemampuan dalam melakukan eksplorasi dan analisis data penjualan tanpa ETL dan visualisasi data.
@@ -7,7 +7,7 @@ Fokus proyek ini adalah mensimulasikan situasi nyata di dunia kerja, di mana seo
 ---
 
 ## Dataset
-Dataset yang digunakan merupakan data penjualan cabang Walmart yang berisi informasi transaksi seperti:
+Dataset yang digunakan merupakan data penjualan cabang Walmart dalam 3 bulan terakhir (Januari-Maret 2019) yang berisi informasi transaksi seperti:
 - Cabang dan kota  
 - Lini produk dan jumlah penjualan  
 - Detail pelanggan (gender, tipe pelanggan, metode pembayaran)  
@@ -15,20 +15,16 @@ Dataset yang digunakan merupakan data penjualan cabang Walmart yang berisi infor
 - Nilai rating pelanggan  
 
 **Kolom-kolom:**
-`invoice_id`, `branch`, `city`, `customer_type`, `gender`, `product_line`, `unit_price`, `quantity`, `tax_pct`, `total`, `date`, `time`, `payment`, `cogs`, 'gross_margin_pct', `gross_income`, `rating`, 'time_of_day', 'day_name', dan 'month_name'
+`invoice_id`, `branch`, `city`, `customer_type`, `gender`, `product_line`, `unit_price`, `quantity`, `tax_pct`, `total`, `date`, `time`, `payment`, `cogs`, `gross_margin_pct`, `gross_income`, `rating`, `time_of_day`, `day_name`, dan `month_name`
 
 ---
 
 ## Tujuan Analisis
-Analisis ini bertujuan untuk menjawab berbagai pertanyaan bisnis terkait performa penjualan, perilaku pelanggan, serta pola transaksi.  
+Analisis ini bertujuan untuk menjawab berbagai pertanyaan bisnis terkait performa penjualan, performa cabang, perilaku pelanggan, serta pola transaksi.  
 
 ---
 
 ## Pertanyaan Bisnis
-### General
-- Berapa banyak kota dalam data ini?  
-- Di kota mana setiap cabang berada?  
-
 ### Produk
 - Berapa jumlah product line yang dimiliki?  
 - Metode pembayaran apa yang paling umum digunakan?  
@@ -38,7 +34,7 @@ Analisis ini bertujuan untuk menjawab berbagai pertanyaan bisnis terkait perform
 - Product line mana yang memiliki total pendapatan terbesar?
 - Cabang atau kota mana yang menghasilkan pendapatan tertinggi?
 - Product line mana yang memiliki rata-rata VAT(Value Added Tax)/PPn terbesar?
-- Kategori produk mana yang “Good” atau “Bad” berdasarkan rata-rata total penjualan?
+- Product line mana yang memiliki penjualan yang melebihi dari rata-rata total penjualan? Kategorikan "Good" jika di atas rata-rata, "Bad" jika di bawah rata-rata!
 - Cabang mana yang menjual lebih banyak produk dari rata-rata produk terjual?
 - Gender apa yang lebih banyak melakukan transaksi pembelian produk?
 - Berapa rata-rata rating tiap produk?
@@ -64,6 +60,9 @@ Analisis ini bertujuan untuk menjawab berbagai pertanyaan bisnis terkait perform
 ---
 
 ## Key Insights
-Sales Performance
-1. Waktu yang sering mengalami penjualan terbanyak di tiap harinya adalah, hari Senin, Selasa, dan Kamis di waktu Malam, hari Rabu dan Jumat di waktu Siang.
-2. Cabang C yang berada di kota Naypyitaw adalah cabang dengan total pendapatan paling tinggi. 
+1. Kategori produk **Electronic Accessories** menjadi **penjualan terbanyak secara kuantitas**, menunjukkan tingginya permintaan pelanggan akan kategori tersebut.
+2. **Cabang C** (kota Naypyitaw) mencatat pendapatan tertinggi dibanding cabang lain, menunjukkan potensi pasar dan performa penjualan terbaik di wilayah tersebut.
+3. Bulan **Januari** memiliki **COGS (Cost of Goods Sold) tertinggi**, menandakan peningkatan volume penjualan pada awal tahun. Ini bisa menjadi acuan untuk strategi promosi tahunan.
+4. Rata-rata **rating pelanggan tertinggi** diberikan pada **hari Jumat di cabang A**, **hari Senin di cabang B**, dan **hari Sabtu di cabang C**, yang mungkin dipengaruhi berbagai faktor di masing-masing cabang.
+5. Pola penjualan menunjukkan **puncak transaksi terjadi di malam pada awal minggu (Senin–Kamis)**, serta **siang  pada pertengahan hingga akhir minggu (Rabu & Jumat)**. Pola ini dapat dimanfaatkan untuk penjadwalan promosi atau penambahan staf.
+7. Tipe pelanggan **Member lebih mendominasi** dalam jumlah transaksi, kuantitas produk, dan total pengeluaran **dibanding Non-member/Normal**, menandakan program loyalitas berjalan efektif dan berkontribusi besar terhadap pendapatan perusahaan.
